@@ -9,21 +9,33 @@ clone in the git repo to get both backend and fronted source code
 
 #backend
 install requirements.txt in the virtual environment
+
 run makemigrations and migrate commands / [default database is sqlite / can switch to postesql db]
+
 django postgresql setting configuration for switching from sqlite to postgresql
 
+
 DATABASES = {
+
     'default': {
+    
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        
         'NAME': config('DB_NAME'),
+        
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
+        
         'HOST': config('DB_HOST'),
+        
         'PORT': '',
+        
     }
 }
 
+
 then run the django server to start api backend.
+
 "by default django server will start in the port 8000"
 
 #frontend 
@@ -33,6 +45,7 @@ cd frontend
 npm install
 npm start
 "by default react app will start in the port 3000" if already in use it might start 3001
+
 '''check the proxy variable in the package.json file settle to  => "proxy": "http://127.0.0.1:8000/",'''
 
 
