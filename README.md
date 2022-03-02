@@ -1,6 +1,8 @@
-# todo app
+### todo app
 todo application for creating task.
+
 backend is built with python-django serving api, and
+
 frontend is built using react js library which consumes backend api
 
 clone in the git repo to get both backend and fronted source code
