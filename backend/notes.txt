@@ -1,0 +1,18 @@
+#psql USER=task_er, PASSWORD='task_er_pwd'
+#ALTER ROLE task_er SET client_encoding TO 'utf8';
+#ALTER ROLE task_er SET default_transaction_isolation TO 'read committed';
+#ALTER ROLE task_er SET timezone TO 'UTC';
+#GRANT ALL PRIVILEGES ON DATABASE helloworld TO task_er;
+
+
+
+
+#   API:
+#   1. Create tasks
+#   2. Return lists of tasks filtered by
+#       a. Task Id
+#       b. Task Created Date Range
+#   3. Delete multiple tasks
+#   4. To be able to perform above task the client should send the jwt token with
+#      the task.delete permission. JWT tokens can be dummy , but read the
+#      payload for resources
