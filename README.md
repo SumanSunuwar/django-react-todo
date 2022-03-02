@@ -39,34 +39,54 @@ then run the django server to start api backend.
 "by default django server will start in the port 8000"
 
 #frontend 
-install the app dependencies 
+
+install the app dependencies
+
 commands:
+
 cd frontend
+
 npm install
+
 npm start
+
 "by default react app will start in the port 3000" if already in use it might start 3001
 
 '''check the proxy variable in the package.json file settle to  => "proxy": "http://127.0.0.1:8000/",'''
 
 
 cors allowing are set in the settings of drf-api
+
 if the react server starts in other host than following api request might not be successfull
 
 django project setting file.
+
 CORS_ALLOWED_ORIGINS = [
+
     "http://localhost:3000",
+    
     "http://127.0.0.1:3000",
+    
     "http://localhost:3001",
+    
     "http://127.0.0.1:3001",
+    
 ]
 
 #backend installation summery:
+
 Set python environment 
+
 clone the code in machine
+
 Install all the dependencies in machine from requirements.txt file from the backend for drf-api dependencies
+
 create .env file and copy the code from .env.example file
+
 Make all the environment set and run the api
 
 #frontend installation summery:
+
 install npm dependecies
+
 run the app
