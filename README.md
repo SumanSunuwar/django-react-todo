@@ -1,5 +1,5 @@
-### todo app
-todo application for creating task.
+#### todo app
+#todo application for creating task.
 
 backend is built with python-django serving api, and
 
@@ -73,7 +73,7 @@ CORS_ALLOWED_ORIGINS = [
     
 ]
 
-#backend installation summery:
+### backend installation summery:
 
 Set python environment 
 
@@ -85,7 +85,7 @@ create .env file and copy the code from .env.example file
 
 Make all the environment set and run the api
 
-#frontend installation summery:
+### frontend installation summery:
 
 install npm dependecies
 
